@@ -3,6 +3,8 @@
     public class Kategoriler
     {
         public int Id { get; set; }
-        public string Adi { get; set; }
+        public string Adi { get; set; } 
+        //1 kategoride 1'den fazla ürün vardır, bu durumda bağlantı için ürünleri !'den fazla getirecek şekilde bağlamamız gerekli
+        public ICollection<Urunler> Urunler = new List<Urunler>();
     }
 }

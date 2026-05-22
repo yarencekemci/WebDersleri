@@ -8,5 +8,10 @@
         public decimal Fiyat { get; set; }
         public string Aciklama { get; set; }
         public DateTime EklemeTarihi { get; set; }
+        public int KategorilerId { get; set; }
+        //bağlama (diagram-relation) işlemleri
+        //1 ürünün 1 tane kategorisi vardır
+
+        public Kategoriler Kategoriler { get; set; }
     }
 }
